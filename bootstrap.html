@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #121212;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            width: 30px;
+            height: 4px;
+            background-color: #276fb7;
+            opacity: 0.5;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-indicators .active {
+            opacity: 1;
+            background-color: #ffc107;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            font-style: italic;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold fst-italic" href="#">French fries</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BOOK TABLE</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <a href="#" class="text-white text-decoration-none"><i class="fa-solid fa-user"></i></a>
+                    <a href="#" class="text-white text-decoration-none"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="text-white text-decoration-none"><i class="fa-solid fa-magnifying-glass"></i></a>                    
+                    <a href="#" class="btn btn-warning rounded-pill px-4 fw-bold ms-2">Order online</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>    
+    <div class="container py-5">
+
+        <div class="row align-items-center min-vh-75">
+
+            <div class="col-md-6">
+                <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <h3 class="text-white fw-bold">Crispy Golden French Fries</h3>
+                            <p class="text-secondary">Fresh, golden, and crispy French fries, expertly fried to give you
+                                the ultimate crunch in every bite.</p>
+                            <button class="btn btn-warning rounded-pill px-4 py-2 mt-2 fw-bold">Order Now</button>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <h3 class="text-white fw-bold">Loaded with Secret Spices</h3>
+                            <p class="text-secondary">Tossed in our unique blend of delicious seasonings that deliver an
+                                irresistible flavor and take you to another world.</p>
+                            <button class="btn btn-warning rounded-pill px-4 py-2 mt-2 fw-bold">Order Now</button>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <h3 class="text-white fw-bold">The Perfect Side Dish</h3>
+                            <p class="text-secondary">The essential and tastiest companion to any burger or sandwich.
+                                Order now and enjoy the original hot taste.</p>
+                            <button class="btn btn-warning rounded-pill px-4 py-2 mt-2 fw-bold">Order Now</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-indicators position-relative justify-content-start m-0 mt-4">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-6 text-center mt-4 mt-md-0">
+                <img src="images.jpg" alt="French Fries" class="img-fluid">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
